@@ -1,0 +1,30 @@
+{
+  "version": "1.0.0-*",
+  "description": "",
+  "authors": [
+    ""
+  ],
+  "tags": [
+    ""
+  ],
+  "projectUrl": "",
+  "licenseUrl": "",
+
+  "dependencies": {
+    "xunit": "2.1.0-rc-build3168",
+    "xunit.runner.dnx": "2.1.0-beta5-build169"
+  },
+  "commands": {
+    "run": "run",
+    "xunit-tests": "xunit.runner.dnx -notrait \"Category=Integration\" -parallel none",
+    "full-tests": "xunit.runner.dnx -verbose -parallel none"
+  },
+
+  "frameworks": {
+    "dnx451": {
+      "dependencies": {
+        "System.Net.Http": "4.0.1-beta-23225"
+      }
+    }
+  }
+}
